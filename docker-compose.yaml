@@ -9,3 +9,5 @@ services:
       - LC_ALL=C.UTF-8
       - LANG=C.UTF-8
     command: tail -f /dev/null
+    ports:
+      - 6655:8888  # jupyterlab
