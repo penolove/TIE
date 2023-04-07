@@ -1,0 +1,11 @@
+version: '2.3'
+services:
+  pytorch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    shm_size: '8gb'
+    environment:
+      - LC_ALL=C.UTF-8
+      - LANG=C.UTF-8
+    command: tail -f /dev/null
